@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Bank Sampah Mutiara</string>
+    <string-array name="status">
+        <item>Sampah telah diterima</item>
+        <item>Hasil penukaran dapat diambil di Bank Sampah</item>
+        <!--        <item>Dana telah diambil</item>-->
+        <item>Penukaran gagal</item>
+    </string-array>
+
+</resources>

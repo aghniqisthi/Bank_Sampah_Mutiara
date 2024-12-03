@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeAdminFragment"
+        android:icon="@drawable/round_home_24"
+        android:title="Beranda"/>
+
+    <item
+        android:id="@+id/penukaranFragment"
+        android:icon="@drawable/round_recycling_24"
+        android:title="Penukaran"/>
+
+    <item
+        android:id="@+id/beritaFragment"
+        android:icon="@drawable/round_auto_stories_24"
+        android:title="Berita"/>
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/round_account_circle_24"
+        android:title="Profile"/>
+
+</menu>

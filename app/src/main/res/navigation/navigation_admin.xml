@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_admin"
+    app:startDestination="@id/homeAdminFragment">
+
+    <fragment
+        android:id="@+id/addPengambilanFragment"
+        android:name="com.example.banksampah.fragment.riwayat.admin.AddPengambilanFragment"
+        android:label="fragment_add_pengambilan"
+        tools:layout="@layout/fragment_add_pengambilan" >
+        <action
+            android:id="@+id/action_addPengambilanFragment_to_riwayatPengambilanAdminFragment"
+            app:destination="@id/riwayatPengambilanAdminFragment" />
+        <action
+            android:id="@+id/action_addPengambilanFragment_to_detailRiwayatWargaFragment"
+            app:destination="@id/detailRiwayatWargaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPenukaranSampahFragment"
+        android:name="com.example.banksampah.fragment.riwayat.admin.AddPenukaranSampahFragment"
+        android:label="fragment_add_penukaran_sampah"
+        tools:layout="@layout/fragment_add_penukaran_sampah" >
+        <action
+            android:id="@+id/action_addPenukaranSampahFragment_to_detailRiwayatWargaFragment"
+            app:destination="@id/detailRiwayatWargaFragment" />
+        <action
+            android:id="@+id/action_addPenukaranSampahFragment_to_riwayatPenukaranAdminFragment"
+            app:destination="@id/riwayatPenukaranAdminFragment" />
+        <action
+            android:id="@+id/action_addPenukaranSampahFragment_to_detailRiwayatWargaFragment2"
+            app:destination="@id/detailRiwayatWargaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/beritaFragment"
+        android:name="com.example.banksampah.fragment.BeritaFragment"
+        android:label="fragment_berita"
+        tools:layout="@layout/fragment_berita" >
+        <action
+            android:id="@+id/action_beritaFragment_to_penukaranFragment"
+            app:destination="@id/penukaranFragment" />
+        <action
+            android:id="@+id/action_beritaFragment_to_homeAdminFragment"
+            app:destination="@id/homeAdminFragment" />
+        <action
+            android:id="@+id/action_beritaFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.banksampah.fragment.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" >
+        <action
+            android:id="@+id/action_editProfileFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeAdminFragment"
+        android:name="com.example.banksampah.fragment.HomeAdminFragment"
+        android:label="fragment_home_admin"
+        tools:layout="@layout/fragment_home_admin" >
+        <action
+            android:id="@+id/action_homeAdminFragment_to_penukaranFragment"
+            app:destination="@id/penukaranFragment" />
+        <action
+            android:id="@+id/action_homeAdminFragment_to_beritaFragment"
+            app:destination="@id/beritaFragment" />
+        <action
+            android:id="@+id/action_homeAdminFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/penukaranFragment"
+        android:name="com.example.banksampah.fragment.PenukaranFragment"
+        android:label="fragment_penukaran"
+        tools:layout="@layout/fragment_penukaran" >
+        <action
+            android:id="@+id/action_penukaranFragment_to_homeAdminFragment"
+            app:destination="@id/homeAdminFragment" />
+        <action
+            android:id="@+id/action_penukaranFragment_to_beritaFragment"
+            app:destination="@id/beritaFragment" />
+        <action
+            android:id="@+id/action_penukaranFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_penukaranFragment_to_detailRiwayatWargaFragment"
+            app:destination="@id/detailRiwayatWargaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.banksampah.fragment.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailRiwayatWargaFragment"
+        android:name="com.example.banksampah.fragment.riwayat.admin.DetailRiwayatWargaFragment"
+        android:label="fragment_detail_riwayat_warga"
+        tools:layout="@layout/fragment_detail_riwayat_warga" >
+        <action
+            android:id="@+id/action_detailRiwayatWargaFragment_to_addPenukaranSampahFragment"
+            app:destination="@id/addPenukaranSampahFragment" />
+        <action
+            android:id="@+id/action_detailRiwayatWargaFragment_to_addPengambilanFragment"
+            app:destination="@id/addPengambilanFragment" />
+        <action
+            android:id="@+id/action_detailRiwayatWargaFragment_to_riwayatPengambilanAdminFragment"
+            app:destination="@id/riwayatPengambilanAdminFragment" />
+        <action
+            android:id="@+id/action_detailRiwayatWargaFragment_to_riwayatPenukaranAdminFragment"
+            app:destination="@id/riwayatPenukaranAdminFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/riwayatPengambilanAdminFragment"
+        android:name="com.example.banksampah.fragment.riwayat.admin.RiwayatPengambilanAdminFragment"
+        android:label="fragment_riwayat_pengambilan_admin"
+        tools:layout="@layout/fragment_riwayat_pengambilan_admin" >
+        <action
+            android:id="@+id/action_riwayatPengambilanAdminFragment_to_addPengambilanFragment"
+            app:destination="@id/addPengambilanFragment" />
+        <action
+            android:id="@+id/action_riwayatPengambilanAdminFragment_to_detailRiwayatWargaFragment"
+            app:destination="@id/detailRiwayatWargaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/riwayatPenukaranAdminFragment"
+        android:name="com.example.banksampah.fragment.riwayat.admin.RiwayatPenukaranAdminFragment"
+        android:label="fragment_riwayat_penukaran_admin"
+        tools:layout="@layout/fragment_riwayat_penukaran_admin" >
+        <action
+            android:id="@+id/action_riwayatPenukaranAdminFragment_to_addPenukaranSampahFragment"
+            app:destination="@id/addPenukaranSampahFragment" />
+        <action
+            android:id="@+id/action_riwayatPenukaranAdminFragment_to_detailRiwayatWargaFragment"
+            app:destination="@id/detailRiwayatWargaFragment" />
+    </fragment>
+</navigation>
